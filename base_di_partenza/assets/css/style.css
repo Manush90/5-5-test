@@ -92,13 +92,30 @@ main div {
   padding: 15px 0px 5px;
 }
 article {
-  display: flex;
   padding: 0vh 11.5vh;
   height: 28vh;
   border-bottom: 1px solid #80808033;
+  line-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.imgAuthor {
+  display: flex;
 }
 
 .articleContainer {
+  display: flex;
+  margin-bottom: 4vh;
+}
+
+.contenitore {
+  height: fit-content;
+  display: flex;
+}
+.blocco {
   display: flex;
 }
 
@@ -110,12 +127,19 @@ h3 {
   padding-right: 25px;
 }
 
+h6 {
+  color: rgba(128, 128, 128, 0.158);
+  font-size: xx-large;
+  font-family: fantasy;
+  margin-right: 2vh;
+  display: flex;
+}
+
 #f40 {
   border-radius: 50%;
   margin: 0px 10px 0px 0px;
   height: 2.5vh;
   width: 2.5vh;
-  position: absolute;
 }
 
 .info {
@@ -130,7 +154,7 @@ h3 {
 
 .titoletto {
   text-align: left;
-  margin-left: 40px;
+  font-weight: bold;
   font-size: small;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0px;
@@ -191,8 +215,9 @@ i + i {
 section {
   padding: 0vh 11.5vh 0vh 11.5vh;
   margin-top: 25px;
-
+  flex-direction: column;
   display: flex;
+  width: 50%;
 }
 
 section p + p + p {
@@ -210,7 +235,7 @@ section p + p + p {
   display: flex;
   flex-direction: column;
   line-height: 35px;
-  margin-left: 120px;
+  margin-left: 70px;
   text-align: left;
 }
 
@@ -221,7 +246,8 @@ section p + p + p {
 h5 {
   font-size: small;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttonFull button {
@@ -232,9 +258,37 @@ h5 {
   height: 26px;
   margin: 3.5px;
 }
-
+.buttonEmpty {
+  line-height: normal;
+}
 .buttonEmpty button {
   border: none;
   color: rgb(145, 139, 139);
   background-color: transparent;
+}
+
+.contenitoreArticolo {
+  display: flex;
+  height: 110px;
+  margin-bottom: 40px;
+}
+
+#art1 {
+  height: 110px;
+  width: auto;
+}
+
+.spazi {
+  margin-right: 30px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+footer {
+  margin-left: auto;
+  clear: both;
 }
