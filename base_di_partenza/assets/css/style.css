@@ -1,7 +1,14 @@
 body {
   font-family: "Spectral", serif;
 }
-
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
 nav {
   display: flex;
   padding: 1.5vh 11.5vh;
@@ -36,10 +43,10 @@ ul button {
 header {
   background-image: url(/base_di_partenza/assets/imgs/svg/m.svg);
   background-color: #ffc017;
-  background-repeat: no-repeat; /* Impedisci la ripetizione dell'immagine */
+  background-repeat: no-repeat;
   background-position: right;
   height: 270px;
-  padding: 1.5vh 11.5vh;
+  padding: 6.5vh 12.5vh 3vh 11.5vh;
   border-bottom: solid 1px black;
 }
 
@@ -61,7 +68,7 @@ header button {
   border-radius: 25px;
   color: white;
   background-color: black;
-  height: 2.7vh;
+  height: 3.2vh;
   align-items: center;
   width: 17vh;
   font-family: "Roboto", sans-serif;
@@ -106,6 +113,14 @@ article {
   display: flex;
 }
 
+.autoreArticolo {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 7px;
+}
 .articleContainer {
   display: flex;
   margin-bottom: 4vh;
@@ -235,8 +250,9 @@ section p + p + p {
   display: flex;
   flex-direction: column;
   line-height: 35px;
-  margin-left: 70px;
+  margin: 0px 0px 0px 70px;
   text-align: left;
+  padding-right: 11.5vh;
 }
 
 .articoli {
@@ -248,6 +264,7 @@ h5 {
   font-weight: bold;
   text-align: left;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
 }
 
 .buttonFull button {
@@ -260,6 +277,7 @@ h5 {
 }
 .buttonEmpty {
   line-height: normal;
+  margin-top: 25px;
 }
 .buttonEmpty button {
   border: none;
@@ -290,5 +308,38 @@ h4 {
 
 footer {
   margin-left: auto;
-  clear: both;
+  width: 40%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.footerCont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: -141vh;
+}
+
+.spazioArticoli {
+  margin-bottom: 20px;
+}
+
+.buttonArticle {
+  border-radius: 35%;
+  border: none;
+  color: grey;
+  height: 20px;
+}
+.boxOfBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 35px;
+}
+.white-bg {
+  background-color: whitesmoke;
 }
